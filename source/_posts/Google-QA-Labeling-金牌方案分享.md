@@ -8,13 +8,15 @@ categories:
   - Competitions
   - NLP
 ---
+## 比赛背景与问题分析
 [google qa labeling 比赛链接](https://www.kaggle.com/c/google-quest-challenge)
 一个月前看到了kaggle上面google举办的一个nlp比赛，google quest Q&A labeling。就是根据问答对，预测30个不同对label值， 这些label值是人工给问答对打上对标签。标签值是0到1之间的数值评分。 这题既可以理解成回归的方法 也 可以理解成 分类的方法去做。  
+## 方案总结
 这次比赛中我们主要使用roberta large, roberta base, xlnet  也尝试过最新的google T5模型，发现效果不是很好。我们对文本清洗，模型结构对设计， loss修改，文本增强都进行了大量的参试。由于比赛public的测试集只有16%,所以我们并没有刻意的去拟合lb,也只是才用了较为简单的后处理方案。这使得我们在最终private开榜以后成功的升到了第5名，进入了奖金区。
 ![最终的排行榜](/image/googleqa.png)
 <!--more-->
 
-
+## 具体细节
 由于个人比较懒这里就直接copy我在kaggle 论坛分享的这个比赛的我们队伍的解决方案。
 
 First of all I want to thank my teammates here.I will briefly introduce our solution here.
