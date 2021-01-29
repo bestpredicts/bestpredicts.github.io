@@ -35,7 +35,7 @@
 <meta property="article:author" content="inner peace">
 <meta property="article:tag" content="NLP">
 <meta property="article:tag" content="文本分类">
-<meta property="article:tag" content="问答匹:配">
+<meta property="article:tag" content="问答匹配">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/image/transformer.png">
 
@@ -214,6 +214,8 @@
 <h2 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h2><p>文本分类、上下文信息、预训练模型、Transformer </p>
 <a id="more"></a>
 
+
+
 <h2 id="1-任务简介"><a href="#1-任务简介" class="headerlink" title="1.任务简介"></a>1.任务简介</h2><p>给定IM交流片段，片段包含一个客户问题以及随后的经纪人若干IM消息，从这些随后的经纪人消息中找出一个是对客户问题的回答。简单来说即是判断问题和回答这个句子对是不是匹配的。</p>
 <h2 id="2-预训练语言模型简介"><a href="#2-预训练语言模型简介" class="headerlink" title="2.预训练语言模型简介"></a>2.预训练语言模型简介</h2><h3 id="2-1-BERT预训练模型"><a href="#2-1-BERT预训练模型" class="headerlink" title="2.1 BERT预训练模型"></a>2.1 BERT预训练模型</h3><p>2018年google公司AI团队新发布的BERT模型[1]，在机器阅读理解顶级水平测试SQuAD1.1中表现出惊人的成绩：全部两个衡量指标上全面超越人类，并且还在11种不同NLP测试中创出最佳成绩，包括将GLUE基准推至80.4％（绝对改进7.6％），MultiNLI准确度达到86.7% （绝对改进率5.6％）等。BERT为NLP带来了里程碑式的改变，也是NLP领域近年来最重要的进展。    Bert base版本使用了12层的transformer [2] encoder层部分作为编码器来对文本输入提取语义特征，用空间向量来表示。Transformer通过self-attention机制使得相同的字在不同的语境下面有不同的空间向量表示。同时相比于传统的rnn,cnn特征提取层来说，突破了rnn不能并行计算的限制，相比cnn计算两个位置之间的关联所需的操作次数不随长度的增长。<br>      <img src="/image/transformer.png" alt="transformer"><br>       图1：transformer网络结构Bert使用了两个预训练任务，来训练模型的权重。一个是mask language model， 即通过对输入的文本进行部分的随机替换成[MASK]字符，然后让模型来预测被[ MASK]的字符是什么，类似于完形填空任务。另外一个就是句子对分类任务，即判断相邻的句子是不是上下文关系。  </p>
 <pre><code>![bert_finetune](/image/bert_finetune.png)
@@ -237,7 +239,7 @@
           <div class="post-tags">
               <a href="/tags/NLP/" rel="tag"># NLP</a>
               <a href="/tags/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB/" rel="tag"># 文本分类</a>
-              <a href="/tags/%E9%97%AE%E7%AD%94%E5%8C%B9-%E9%85%8D/" rel="tag"># 问答匹:配</a>
+              <a href="/tags/%E9%97%AE%E7%AD%94%E5%8C%B9%E9%85%8D/" rel="tag"># 问答匹配</a>
           </div>
 
         
