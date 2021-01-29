@@ -89,7 +89,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Cambiar a barra de navegación">
+    <div class="toggle" aria-label="تشغيل شريط التصفح">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -119,12 +119,12 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Inicio</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archivo</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>الأرشيفات</a>
 
   </li>
   </ul>
@@ -176,9 +176,9 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Publicado el</span>
+              <span class="post-meta-item-text">نُشر في</span>
 
-              <time title="Creado por: 2020-10-12 01:23:12" itemprop="dateCreated datePublished" datetime="2020-10-12T01:23:12+08:00">2020-10-12</time>
+              <time title="أُنشأ: 2020-10-12 01:23:12" itemprop="dateCreated datePublished" datetime="2020-10-12T01:23:12+08:00">2020-10-12</time>
             </span>
 
           
@@ -194,6 +194,9 @@
       
         <h2 id="Abstract："><a href="#Abstract：" class="headerlink" title="Abstract："></a>Abstract：</h2><p>像bert这种基于双向transformer作为encoder的预训练模型最近几年已经广泛用来各种的自然语言的下游任务。这篇论文主要提出一种基于bert的框架来做抽取和生成两种文本摘要方法。<br>提出了一种基于文档级别的句子编码方案来获得每个句子的表征。<br>通过把句子拼接到一起的方法。<br>针对生成式摘要主要是通过表格学习率来分别针对encoder和decoder来进行finetune.实验表明这种分两步进行finetune的方法提高了生成摘要模型的效果。  </p>
 <h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>预训练语言模型已经在很大nlp任务上面取得了SOTA的效果。大多数情况下，预训练模型主要被用来作为各种nlp任务的句子或者段落的编码器，包括各种分类任务。在本文中，研究了预训练语言模型在文本摘要中的应用,不同于别的任务文本摘要需要超越个别词和句子更广泛的自然语言理解能力。目标是将文档进行压缩成更短的文本且保留文章的主要语义。<br>对于生成式摘要来说需要语言生成模型包含新颖的单词和短语摘要。对于抽取式任务来说通常当作对句子进行二分类任务。<br>提出了一种新颖的基于Bert的文档编码器，使其能够获得文档和句子的表征，具体做法是通过拼接句子间的transformer层用来作为句子的表征用来作为抽取任务。对于生成模型来说，采取的是encoder-decoder 的结构。使用预训练模型bert作为encoder,使用随机初始化的decoer.设计了新的训练方法，针对encoder和decoer使用不同的optimizer.受之前工作的启发，通过结合抽取任务结果可以用来提升生成模型效果，提出了两步优化的方法，针对encoder，做了两次finetune，第一次使用抽取任务来做finetune,然后再用到生成任务上面来。  </p>
+<a id="more"></a>
+
+
 <h2 id="2-Background"><a href="#2-Background" class="headerlink" title="2. Background"></a>2. Background</h2><h3 id="2-1-Pretrained-Language-Models"><a href="#2-1-Pretrained-Language-Models" class="headerlink" title="2.1 Pretrained Language Models"></a>2.1 Pretrained Language Models</h3><p>bert可以通过向句子开头插入[CLS] token,cls向量通常用来聚合表示整个句子的信息。[SEP] token通常用来插入到两个句子之间，用来表示一个句子的结尾。一篇可以用[w1,…,wn]个token来表示，每个token由 token embedding 表示每个token的空间向量，segmentation embedding用来切分表示两个句子,position embedding 用来表示每个token在句子中的位置。每个token的最终向量由3个向量相加得到。<br><img src="/image/bertsum.png" alt="bertsum"></p>
 <h3 id="2-2-Extractive-Summarization"><a href="#2-2-Extractive-Summarization" class="headerlink" title="2.2 Extractive Summarization"></a>2.2 Extractive Summarization</h3><p>抽取式摘要通常被当作句子分类任务来解决，从文本中抽取出重要的句子。  SUMMARUNNER (Nal- lapati et al., 2017) 是最早的通过rnn对句子进行编码，REFRESH (Narayan et al., 2018b)是通过强化学习的方法 ….. </p>
 <h3 id="2-3-Abstractive-Summarization"><a href="#2-3-Abstractive-Summarization" class="headerlink" title="2.3 Abstractive Summarization"></a>2.3 Abstractive Summarization</h3><p>抽取式摘要通常被当作seq2seq的问题，输入为 x = [x1, …, xn]，输出为 y = [y1, …, ym] ，以自回归的方式，来求解条件概率p(y1, …, ym|x1, …, xn)。Rush et al. (2015) and Nallapati et al. (2016) 是第一个将encoder-decoder的方法运用到文本摘要问题上的，See et al. (2017)通过pointer- generator network网络提高了模型效果，</p>
@@ -219,8 +222,8 @@
       <i class="fa fa-chevron-left"></i> automl survey
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/01/29/CCF-BDCI%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%AE%E7%AD%94%E5%8C%B9%E9%85%8D/" rel="next" title="CCF BDCI房地产问答匹配">
-      CCF BDCI房地产问答匹配 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/01/29/CCF-BDCI%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%AE%E7%AD%94%E5%8C%B9%E9%85%8D/" rel="next" title="CCF BDCI房地产问答匹配第二名解决方案">
+      CCF BDCI房地产问答匹配第二名解决方案 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -272,10 +275,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Tabla de contenidos
+          المحتويات
         </li>
         <li class="sidebar-nav-overview">
-          Inicio
+          عام
         </li>
       </ul>
 
@@ -296,18 +299,18 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">4</span>
-          <span class="site-state-item-name">entradas</span>
+          <span class="site-state-item-name">المقالات</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
         <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">categorías</span></a>
+        <span class="site-state-item-name">التصنيفات</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
         <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">tags</span></a>
+        <span class="site-state-item-name">الوسوم</span></a>
       </div>
   </nav>
 </div>
@@ -347,7 +350,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">inner peace</span>
 </div>
-  <div class="powered-by">Creado mediante <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
         
