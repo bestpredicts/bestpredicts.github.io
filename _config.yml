@@ -8,7 +8,7 @@ subtitle: '数据科学空间'
 description: ''
 keywords:
 author: inner peace
-language: cn
+language: zh_CN
 timezone: ''
 
 # URL
@@ -110,3 +110,10 @@ backup:
   repository:
     github: git@github.com:bestpredicts/bestpredicts.github.io.git,hexo_bkp
 
+feed:  
+ type: atom  
+ path: atom.xml  
+ limit: 0  
+
+ plugins:
+   - hexo-generator-feed
