@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>DataScienceHub 数据科学空间</title>
+  <title>DataScienceHub</title>
   
-  <subtitle>数据科学空间</subtitle>
+  
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
