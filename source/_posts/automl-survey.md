@@ -1,7 +1,12 @@
 ---
+layout: blog
 title: automl survey
 date: 2020-04-13 16:49:23
 tags:
+  - auto ml
+categories:
+  - auto ml
+ 
 ---
 最近在学习automl这个方向，整理总结了一些automl相关的资料。
 

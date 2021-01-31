@@ -3,6 +3,11 @@ layout: blog
 title: 论文笔记之 Text Summarization with Pretrained Encoders
 date: 2020-10-12 01:23:12
 tags:
+  - nlp
+  - text summarization
+categories:
+  - text summarization
+
 ---
 
 ## Abstract：

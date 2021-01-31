@@ -1,13 +1,16 @@
+---
+layout: blog
 title: Google QA Labeling 金牌方案分享
 date: 2020-03-12 20:34:37
 tags:
-  - NLP
-  - Kaggle
-  - Google
+  - nlp
+  - kaggle
 categories:
-  - Competitions
-  - NLP
+  - competitions
+  
 ---
+
+
 ## 比赛背景与问题分析
 [google qa labeling 比赛链接](https://www.kaggle.com/c/google-quest-challenge)
 一个月前看到了kaggle上面google举办的一个nlp比赛，google quest Q&A labeling。就是根据问答对，预测30个不同对label值， 这些label值是人工给问答对打上对标签。标签值是0到1之间的数值评分。 这题既可以理解成回归的方法 也 可以理解成 分类的方法去做。  

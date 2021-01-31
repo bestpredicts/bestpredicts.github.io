@@ -1,16 +1,19 @@
 ---
+layout: blog
 title: CCF BDCI房地产问答匹配第二名解决方案
 date: 2021-01-29 21:11:18
 tags:
-  - NLP
-  - Text Classifier
-  - QA Match
+  - nlp
+  - text classifier
+  - qa match
 
 categories:
-  - Competitions
-  - NLP
+  - competitions
+
+
 ---
----
+
+
 ## 摘要
 房产行业聊天匹配问题本质上面是句子对的分类问题，即判断问题和回答是否匹配的文本分类问题。但是问答匹配不同的是除了依赖当前的回答，往往是在一个多伦对话场景下的产生背景，在本题目中通过对数据的分析，发现通过id问题下面的相邻id的问答具有上下文的关系，我们在设计模型的输入的时候引入了上下文的信息，使得模型能够学习到更多的因果关系。同时近年来基于transformer结构的预训练模型横扫各大nlp任务的SOTA，所以在模型结构方面我们也是采用了基于transformer的预训练语言模型结合任务做出了创新性的设计，取得了比较好的效果。我们的模型最终取得了线上第二的成绩。
 
