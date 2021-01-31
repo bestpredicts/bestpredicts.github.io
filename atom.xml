@@ -3,11 +3,11 @@
   <title>DataScienceHub</title>
   
   
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="https://dshub.cn/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://dshub.cn/"/>
   <updated>2021-01-29T13:11:18.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://dshub.cn/</id>
   
   <author>
     <name>inner peace</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>CCF BDCI房地产问答匹配第二名解决方案</title>
-    <link href="http://yoursite.com/2021/01/29/CCF-BDCI%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%AE%E7%AD%94%E5%8C%B9%E9%85%8D/"/>
-    <id>http://yoursite.com/2021/01/29/CCF-BDCI%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%AE%E7%AD%94%E5%8C%B9%E9%85%8D/</id>
+    <link href="https://dshub.cn/2021/01/29/CCF-BDCI%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%AE%E7%AD%94%E5%8C%B9%E9%85%8D/"/>
+    <id>https://dshub.cn/2021/01/29/CCF-BDCI%E6%88%BF%E5%9C%B0%E4%BA%A7%E9%97%AE%E7%AD%94%E5%8C%B9%E9%85%8D/</id>
     <published>2021-01-29T13:11:18.000Z</published>
     <updated>2021-01-29T13:11:18.000Z</updated>
     
@@ -31,21 +31,21 @@
     
     
     
-    <category term="competitions" scheme="http://yoursite.com/categories/competitions/"/>
+    <category term="competitions" scheme="https://dshub.cn/categories/competitions/"/>
     
     
-    <category term="nlp" scheme="http://yoursite.com/tags/nlp/"/>
+    <category term="nlp" scheme="https://dshub.cn/tags/nlp/"/>
     
-    <category term="text classifier" scheme="http://yoursite.com/tags/text-classifier/"/>
+    <category term="text classifier" scheme="https://dshub.cn/tags/text-classifier/"/>
     
-    <category term="qa match" scheme="http://yoursite.com/tags/qa-match/"/>
+    <category term="qa match" scheme="https://dshub.cn/tags/qa-match/"/>
     
   </entry>
   
   <entry>
     <title>论文笔记之 Text Summarization with Pretrained Encoders</title>
-    <link href="http://yoursite.com/2020/10/12/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%E4%B9%8B-Text-Summarization-with-Pretrained-Encoders/"/>
-    <id>http://yoursite.com/2020/10/12/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%E4%B9%8B-Text-Summarization-with-Pretrained-Encoders/</id>
+    <link href="https://dshub.cn/2020/10/12/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%E4%B9%8B-Text-Summarization-with-Pretrained-Encoders/"/>
+    <id>https://dshub.cn/2020/10/12/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%E4%B9%8B-Text-Summarization-with-Pretrained-Encoders/</id>
     <published>2020-10-11T17:23:12.000Z</published>
     <updated>2020-10-11T17:23:12.000Z</updated>
     
@@ -57,19 +57,19 @@
     
     
     
-    <category term="text summarization" scheme="http://yoursite.com/categories/text-summarization/"/>
+    <category term="text summarization" scheme="https://dshub.cn/categories/text-summarization/"/>
     
     
-    <category term="nlp" scheme="http://yoursite.com/tags/nlp/"/>
+    <category term="nlp" scheme="https://dshub.cn/tags/nlp/"/>
     
-    <category term="text summarization" scheme="http://yoursite.com/tags/text-summarization/"/>
+    <category term="text summarization" scheme="https://dshub.cn/tags/text-summarization/"/>
     
   </entry>
   
   <entry>
     <title>automl survey</title>
-    <link href="http://yoursite.com/2020/04/13/automl-survey/"/>
-    <id>http://yoursite.com/2020/04/13/automl-survey/</id>
+    <link href="https://dshub.cn/2020/04/13/automl-survey/"/>
+    <id>https://dshub.cn/2020/04/13/automl-survey/</id>
     <published>2020-04-13T08:49:23.000Z</published>
     <updated>2020-04-13T08:49:23.000Z</updated>
     
@@ -81,17 +81,17 @@
     
     
     
-    <category term="auto ml" scheme="http://yoursite.com/categories/auto-ml/"/>
+    <category term="auto ml" scheme="https://dshub.cn/categories/auto-ml/"/>
     
     
-    <category term="auto ml" scheme="http://yoursite.com/tags/auto-ml/"/>
+    <category term="auto ml" scheme="https://dshub.cn/tags/auto-ml/"/>
     
   </entry>
   
   <entry>
     <title>Google QA Labeling 金牌方案分享</title>
-    <link href="http://yoursite.com/2020/03/12/Google-QA-Labeling-%E9%87%91%E7%89%8C%E6%96%B9%E6%A1%88%E5%88%86%E4%BA%AB/"/>
-    <id>http://yoursite.com/2020/03/12/Google-QA-Labeling-%E9%87%91%E7%89%8C%E6%96%B9%E6%A1%88%E5%88%86%E4%BA%AB/</id>
+    <link href="https://dshub.cn/2020/03/12/Google-QA-Labeling-%E9%87%91%E7%89%8C%E6%96%B9%E6%A1%88%E5%88%86%E4%BA%AB/"/>
+    <id>https://dshub.cn/2020/03/12/Google-QA-Labeling-%E9%87%91%E7%89%8C%E6%96%B9%E6%A1%88%E5%88%86%E4%BA%AB/</id>
     <published>2020-03-12T12:34:37.000Z</published>
     <updated>2020-03-12T12:34:37.000Z</updated>
     
@@ -103,12 +103,12 @@
     
     
     
-    <category term="competitions" scheme="http://yoursite.com/categories/competitions/"/>
+    <category term="competitions" scheme="https://dshub.cn/categories/competitions/"/>
     
     
-    <category term="nlp" scheme="http://yoursite.com/tags/nlp/"/>
+    <category term="nlp" scheme="https://dshub.cn/tags/nlp/"/>
     
-    <category term="kaggle" scheme="http://yoursite.com/tags/kaggle/"/>
+    <category term="kaggle" scheme="https://dshub.cn/tags/kaggle/"/>
     
   </entry>
   
