@@ -151,7 +151,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
+  display: always
 
   # Sidebar padding in pixels.
   padding: 18
@@ -181,7 +181,7 @@ social:
   E-Mail: mailto:dengyong.ai@gmail.com || fa fa-envelope
   #Google: https://plus.google.com/yourname || fab fa-google
   知乎: https://www.zhihu.com/people/YongDeng0101 || fab fa-zhihu
-  # RSS: /atom.xml || rss
+  RSS: /atom.xml || rss
 
 
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -280,7 +280,7 @@ follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
   #WeChat: /images/wechat_channel.jpg || fab fa-weixin
-  RSS: /atom.xml || fa fa-rss
+  # RSS: /atom.xml || fa fa-rss
 
 
 
