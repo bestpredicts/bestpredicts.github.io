@@ -24,13 +24,13 @@
 <p>[2] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in Neural Information Pro- cessing Systems, pages 6000–6010.<br>[3] Yiming Cui, Wanxiang Che, Ting Liu, Bing Qin, Ziqing Yang, Shijin Wang, and Guoping Hu. 2019a. Pre-training with whole word masking for chinese bert. arXiv preprint arXiv:1906.08101.<br>。<br>[4] Cui, Yiming  and Che, Wanxiang  and Liu, Ting  and Qin, Bing Wang, Shijin and Hu, Guoping . 2020. Revisiting Pre-Trained Models for chinese Natural Language Processing. EMNLP    </p>
 ]]></content>
       <categories>
-        <category>Competitions</category>
-        <category>NLP</category>
+        <category>competitions</category>
+        <category>nlp</category>
       </categories>
       <tags>
-        <tag>NLP</tag>
-        <tag>Text Classifier</tag>
-        <tag>QA Match</tag>
+        <tag>nlp</tag>
+        <tag>text classifier</tag>
+        <tag>qa match</tag>
       </tags>
   </entry>
   <entry>
@@ -44,13 +44,12 @@
 <p>First of all I want to thank my teammates here.I will briefly introduce our solution here.<br>models<br>1.Model structure。we design different models structure. We mainly refer to the solution of ccf internet sentiment analysis，concat different cls embedding . here it is the link BDCI2019-SENTIMENT-CLASSIFICATION<br>2.We found 30 labels through analysis, one is the question-related evaluation, and the other is the answer-related evaluation. In order to make the model learn better, we have designed the q model to remove the problem-related label and the a model to process the answer Related labels。 it is better than qa models.<br>3.different model test. roberta base &gt;roberta large &gt;xlnet base &gt;bert base &gt; t5 base.<br>Post-processing<br>Analysis and evaluation methods and competition data，we use 0,1 reseting way. it improve lb 0.05 or more.<br>Features<br>1.we want that our model learns features that are not only considered in text, so we add host and<br>category embeeding features annd other Statistical Features。 it improve both cv and lb about 0.005.<br>Text clean<br>1.We also did text cleaning to remove stop words and some symbols， it improve about 0.002<br>Stacking<br>1.Our Best Private model scored 0.42787 ,but we dont’t select it. it is stacking by roberta large and roberta base and xlnet base.<br>blend.loc[:,targets] = roberta_large_oof_test.loc[:,targets].values<em>0.4+0.3</em>roberta_base_oof_test.loc[:,targets].values+\ xlnet_base_oof_test.loc[:,targets].values*0.3<br>stacking improve both cv and lb about 0.02 . it help much.</p>
 ]]></content>
       <categories>
-        <category>Competitions</category>
-        <category>NLP</category>
+        <category>competitions</category>
+        <category>nlp</category>
       </categories>
       <tags>
-        <tag>NLP</tag>
-        <tag>Kaggle</tag>
-        <tag>Google</tag>
+        <tag>nlp</tag>
+        <tag>kaggle</tag>
       </tags>
   </entry>
   <entry>
@@ -68,6 +67,14 @@
 <h3 id="3-2-Extractive-Summarization"><a href="#3-2-Extractive-Summarization" class="headerlink" title="3.2 Extractive Summarization"></a>3.2 Extractive Summarization</h3><p>通过上面的插入[cls]的方法，可以将[CLS]的token向量来表示第i个句子，然后实验了bert的第1，2，3层transformers输出向量，实验是当取第二层transformers向量输出，后面接上sigmoid 二分类交叉熵，模型取得最好的效果。</p>
 <h3 id="3-3-Abstractive-Summarization"><a href="#3-3-Abstractive-Summarization" class="headerlink" title="3.3 Abstractive Summarization"></a>3.3 Abstractive Summarization</h3><h2 id="4-Experimental-Setup"><a href="#4-Experimental-Setup" class="headerlink" title="4. Experimental Setup"></a>4. Experimental Setup</h2><h2 id="5-Results"><a href="#5-Results" class="headerlink" title="5. Results"></a>5. Results</h2><h2 id="优点与缺点"><a href="#优点与缺点" class="headerlink" title="优点与缺点"></a>优点与缺点</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>针对在输入多个句子的时候，设计在每个句子前面再插入[cls]的方法来表示每个句子向量，设计的很巧妙，且简单实用。针对bert输入长度的限制，提出了随机初始化大于512的位置向量的方法。</p>
 <h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3>]]></content>
+      <categories>
+        <category>nlp</category>
+        <category>text summarization</category>
+      </categories>
+      <tags>
+        <tag>nlp</tag>
+        <tag>text summarization</tag>
+      </tags>
   </entry>
   <entry>
     <title>automl survey</title>
@@ -797,5 +804,11 @@
 </tbody></table>
 <p>引用：<br>【1】<a href="https://github.com/hibayesian/awesome-automl-papers#bayesian-optimization">https://github.com/hibayesian/awesome-automl-papers#bayesian-optimization</a><br>【2】<a href="https://github.com/keras-team/autokeras">https://github.com/keras-team/autokeras</a><br>【3】<a href="https://github.com/h2oai/h2o-3/">https://github.com/h2oai/h2o-3/</a><br>【4】<a href="https://github.com/Microsoft/nni">https://github.com/Microsoft/nni</a></p>
 ]]></content>
+      <categories>
+        <category>auto ml</category>
+      </categories>
+      <tags>
+        <tag>auto ml</tag>
+      </tags>
   </entry>
 </search>

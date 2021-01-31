@@ -32,16 +32,16 @@
     
     
     
-    <category term="Competitions" scheme="http://yoursite.com/categories/Competitions/"/>
+    <category term="competitions" scheme="http://yoursite.com/categories/competitions/"/>
     
-    <category term="NLP" scheme="http://yoursite.com/categories/Competitions/NLP/"/>
+    <category term="nlp" scheme="http://yoursite.com/categories/competitions/nlp/"/>
     
     
-    <category term="NLP" scheme="http://yoursite.com/tags/NLP/"/>
+    <category term="nlp" scheme="http://yoursite.com/tags/nlp/"/>
     
-    <category term="Text Classifier" scheme="http://yoursite.com/tags/Text-Classifier/"/>
+    <category term="text classifier" scheme="http://yoursite.com/tags/text-classifier/"/>
     
-    <category term="QA Match" scheme="http://yoursite.com/tags/QA-Match/"/>
+    <category term="qa match" scheme="http://yoursite.com/tags/qa-match/"/>
     
   </entry>
   
@@ -60,6 +60,14 @@
     
     
     
+    <category term="nlp" scheme="http://yoursite.com/categories/nlp/"/>
+    
+    <category term="text summarization" scheme="http://yoursite.com/categories/nlp/text-summarization/"/>
+    
+    
+    <category term="nlp" scheme="http://yoursite.com/tags/nlp/"/>
+    
+    <category term="text summarization" scheme="http://yoursite.com/tags/text-summarization/"/>
     
   </entry>
   
@@ -78,6 +86,10 @@
     
     
     
+    <category term="auto ml" scheme="http://yoursite.com/categories/auto-ml/"/>
+    
+    
+    <category term="auto ml" scheme="http://yoursite.com/tags/auto-ml/"/>
     
   </entry>
   
@@ -96,16 +108,14 @@
     
     
     
-    <category term="Competitions" scheme="http://yoursite.com/categories/Competitions/"/>
+    <category term="competitions" scheme="http://yoursite.com/categories/competitions/"/>
     
-    <category term="NLP" scheme="http://yoursite.com/categories/Competitions/NLP/"/>
+    <category term="nlp" scheme="http://yoursite.com/categories/competitions/nlp/"/>
     
     
-    <category term="NLP" scheme="http://yoursite.com/tags/NLP/"/>
+    <category term="nlp" scheme="http://yoursite.com/tags/nlp/"/>
     
-    <category term="Kaggle" scheme="http://yoursite.com/tags/Kaggle/"/>
-    
-    <category term="Google" scheme="http://yoursite.com/tags/Google/"/>
+    <category term="kaggle" scheme="http://yoursite.com/tags/kaggle/"/>
     
   </entry>
   
